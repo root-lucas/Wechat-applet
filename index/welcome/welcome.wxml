@@ -1,0 +1,8 @@
+<!--index/welcome/welcome.wxml-->
+<view class="container">
+    <image class="user-start-image" src="/index/images/001.jpg"></image>
+    <text class="user-name"><text style="color:red">hello</text>, root</text>
+    <view class="moto-container">
+        <text class="moto">进入小程序</text>
+    </view>
+</view>
