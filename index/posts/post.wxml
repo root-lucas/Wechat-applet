@@ -1,0 +1,24 @@
+<!--index/posts/post.wxml-->
+<view>
+    <swiper indicator-dots="true" indicator-color="#fff" autoplay="auto" interval="4000">
+          <swiper-item><image src="/index/images/swiper-01.jpg"></image></swiper-item>
+          <swiper-item><image src="/index/images/swiper-02.jpg"></image></swiper-item>
+          <swiper-item><image src="/index/images/swiper-03.jpg"></image></swiper-item>
+          <swiper-item><image src="/index/images/swiper-04.jpg"></image></swiper-item>
+    </swiper>
+    <view class="post-container">
+        <view class="post-author-date">
+              <image wx:if="{{true}}" class="post-author" src="/index/images/header-01.png"></image>
+              <text class="post-date">{{date}}</text>
+        </view>
+        <text class="post-title">锄禾日当午，粒粒皆辛苦</text>
+        <image class="post-image" src="/index/images/post-image-03.jpg"></image>
+        <text class="post-content">这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字</text>
+        <view class="post-like">
+              <image class="post-like-image" src="/index/images/icons-01.jpg"></image>
+              <text class="post-like-font">125</text>
+              <image class="post-like-image" src="/index/images/icons-02.jpg"></image>
+              <text class="post-like-font">36</text>
+        </view>
+    </view>
+</view>
