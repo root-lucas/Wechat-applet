@@ -7,7 +7,17 @@ Page({
   data: {
 
   },
-
+  onTap:function(){
+    wx.navigateTo({
+      url: '../posts/post',
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
+    })
+    // wx.redirectTo({
+    //   url: '../posts/post',
+    // })
+  },
   /**
    * Lifecycle function--Called when page load
    */

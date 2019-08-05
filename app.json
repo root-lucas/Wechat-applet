@@ -2,8 +2,6 @@
   "pages": [
     "index/posts/post",
     "index/welcome/welcome"
-    
-    
   ],
   "window": {
     "backgroundTextStyle": "light",
