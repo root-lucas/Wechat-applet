@@ -1,7 +1,16 @@
 {
   "pages": [
     "index/posts/post",
+<<<<<<< HEAD
     "index/welcome/welcome"
+<<<<<<< HEAD
+=======
+    
+    
+=======
+    "index/index"
+>>>>>>> d6ecb7a81e5faaf32e254dc87d2843ce24ac0723
+>>>>>>> 502057b118bae3698724d0e715788673a8c6ae6a
   ],
   "window": {
     "backgroundTextStyle": "light",
