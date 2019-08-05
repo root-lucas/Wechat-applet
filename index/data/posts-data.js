@@ -6,6 +6,7 @@ var local_database = [{
     content: "菊黄蟹正肥，品尝秋之味。徐志摩把,“看初花的荻芦”和“到楼外楼吃蟹”,并列为秋天来杭州不能错过的风雅之事；用林妹妹的话讲是“螯封嫩玉双双满，",
     reading: "112",
     collection: "96",
+    postId:0,
   },
   {
     title: "比利·林恩的中场故事",
@@ -15,6 +16,7 @@ var local_database = [{
     collection: 92,
     date: "Aust 20 2019",
     avatar: "/index/images/avatar/1.png",
+    postId: 1,
   },
   {
     //按住alt + shift + F 可以格式化代码样式
@@ -25,6 +27,7 @@ var local_database = [{
     collection: 92,
     date: "Aust 12 2019",
     avatar: "/index/images/avatar/3.png",
+    postId: 2,
   },
   {
     title: "微信·小程序开发工具安装指南",
@@ -34,6 +37,7 @@ var local_database = [{
     collection: 92,
     date: "Jul 20 2019",
     avatar: "/index/images/avatar/5.png",
+    postId: 3,
   }
 ]
 /*给脚本文件定义出口,使之能够输出到别的脚本文件里去*/

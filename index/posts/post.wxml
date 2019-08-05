@@ -24,6 +24,8 @@
               <text class="post-like-font">{{item.collection}}</text>
         </view>
     </view> -->
-    <template is="postItem" data="{{item}}" />
+    <view bindtap="onPostTap" data-postId-num="{{item.postId}}" data-post-name="hello">
+        <template is="postItem" data="{{...item}}" />
+    </view>
   </block>
 </view>

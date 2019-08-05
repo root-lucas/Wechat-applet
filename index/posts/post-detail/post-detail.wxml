@@ -1,0 +1,19 @@
+<view class="container">
+    <image class="head-image" src="/index/images/post/sls.jpg"></image>
+    <image class="audio" src="/index/images/music/music-start.png"></image>
+    <view  class="author-date">
+        <image class="avatar" src="/index/images/avatar/2.png"></image>
+        <text class="author">胡歌</text>
+        <text  class="const-text">发表于</text>
+        <text class="date">三天前</text>
+    </view>
+    <text class="title">炉石传说好玩吗</text>
+    <view class="tool">
+        <view class="circle-img">
+            <image class="share-img" src="/index/images/icon/collection.png"></image>
+            <image class="share-img" src="/index/images/icon/share.png"></image>
+        </view>
+        <view class="horizon"></view>
+    </view>
+    <text class="detail">炉石传说能不好玩吗,暴雪出品必属精品</text>
+</view>
