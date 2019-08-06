@@ -1,21 +1,9 @@
 {
   "pages": [
     "index/posts/post",
-<<<<<<< HEAD
     "index/welcome/welcome",
-    "index/posts/post-detail/post-detail"
-=======
-<<<<<<< HEAD
-    "index/welcome/welcome"
-<<<<<<< HEAD
-=======
-    
-    
-=======
+    "index/posts/post-detail/post-detail",
     "index/index"
->>>>>>> d6ecb7a81e5faaf32e254dc87d2843ce24ac0723
->>>>>>> 502057b118bae3698724d0e715788673a8c6ae6a
->>>>>>> 0c1780d92773d2ec98fed21ba0ce3ada3afbe4a3
   ],
   "window": {
     "backgroundTextStyle": "light",

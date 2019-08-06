@@ -27,7 +27,7 @@ Page({
     //currentTarget表示当前鼠标点击的组件
     //dataset表示所有自定义属性的集合,然后dataset其中一个属性名是postId的存放的值(如data-postId={{值}})
     wx.navigateTo({
-      url: "post-detail/post-detail"
+      url: "post-detail/post-detail?id="+postId
     })
   },
   /**
