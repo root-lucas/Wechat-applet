@@ -5,7 +5,6 @@ Page({
   onLoad:function(option){  
     var postId = option.id; //这个id是post.js的navigate的自定义名称传值过来的
     this.data.currentPostId = postId
-    // console.log(this.data.currentPostId)
     var postData = postsData.postList[postId]; //根据postId值(下标)获取相应文章详情
     // console.log(postData)
     // this.data.postaData=postData;       //只能修改数据但不修改视图显示
