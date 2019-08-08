@@ -28,6 +28,26 @@ Page({
       url: "post-detail/post-detail?id=" + postId
     })
   },
+
+  /*基本方式swiper跳转详情页面*/
+  // onSwiperItemTap:function(event){
+  //   var postId = event.currentTarget.dataset.postid;
+  //   //currentTarget表示当前鼠标点击的组件
+  //   //dataset表示所有自定义属性的集合,然后dataset其中一个属性名是postId的存放的值(如data-postId={{值}})
+  //   wx.navigateTo({
+  //     url: "post-detail/post-detail?id=" + postId
+  //   })  
+  // },
+
+  /*冒泡方式swiper跳转详情页面*/
+  onSwiperTap:function(event){
+    //target指的是当前点击的组件,而currentTarget指的是事件捕获的组件
+    //target这里指的是image,而currentTarget指的是swiper
+    var postId = event.target.dataset.postid;
+    wx.navigateTo({
+      url: "post-detail/post-detail?id=" + postId
+    })  
+  },
   /**
    * Lifecycle function--Called when page is initially rendered
    */

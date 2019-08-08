@@ -2,11 +2,11 @@
 <import src="post-item/post-item-template.wxml"  />
 
 <view>
-    <swiper indicator-dots="true" indicator-color="#fff" autoplay="auto" interval="4000">
-          <swiper-item><image src="/index/images/swiper-01.jpg"></image></swiper-item>
-          <swiper-item><image src="/index/images/swiper-02.jpg"></image></swiper-item>
-          <swiper-item><image src="/index/images/swiper-03.jpg"></image></swiper-item>
-          <swiper-item><image src="/index/images/swiper-04.jpg"></image></swiper-item>
+    <swiper catchtap="onSwiperTap" indicator-dots="true" indicator-color="#fff" autoplay="auto" interval="4000">
+          <swiper-item><image src="/index/images/swiper-01.jpg" data-postId="0"></image></swiper-item>
+          <swiper-item><image src="/index/images/swiper-02.jpg" data-postId="1"></image></swiper-item>
+          <swiper-item><image src="/index/images/swiper-03.jpg" data-postId="2"></image></swiper-item>
+          <swiper-item><image src="/index/images/swiper-04.jpg" data-postId="3"></image></swiper-item>
     </swiper>
   <block wx:for="{{post_key}}" wx:for-item="item" wx:key="this">
     <!-- <view class="post-container">
@@ -24,7 +24,7 @@
               <text class="post-like-font">{{item.collection}}</text>
         </view>
     </view> -->
-    <view bindtap="onPostTap" data-postId-num="{{item.postId}}" data-post-name="hello">
+    <view catchtap="onPostTap" data-postId-num="{{item.postId}}" data-post-name="hello">
         <template is="postItem" data="{{...item}}" />
     </view>
   </block>
