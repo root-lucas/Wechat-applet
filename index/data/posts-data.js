@@ -1,6 +1,6 @@
 var local_database = [
   {
-    date: "Sep 18 2016",
+    date: "Sep 18 2019",
     title: "正是虾肥蟹壮时",
     imgSrc: "/index/images/post/crab.png",
     avatar: "/index/images/avatar/1.png",
@@ -12,6 +12,11 @@ var local_database = [
     dateTime: "24小时前",
     detail: "菊黄蟹正肥，品尝秋之味。徐志摩把“看初花的荻芦”和“到楼外楼吃蟹”并列为秋天来杭州不能错过的风雅之事；用林妹妹的话讲是“螯封嫩玉双双满，壳凸红脂块块香”；在《世说新语》里，晋毕卓更是感叹“右手持酒杯，左手持蟹螯，拍浮酒船中，便足了一生矣。”漫漫人生长路，美食与爱岂可辜负？于是作为一个吃货，突然也很想回味一下属于我的味蕾记忆。记忆中的秋蟹，是家人的味道，弥漫着浓浓的亲情。\n\n是谁来自山川湖海，却囿于昼夜，厨房与爱？ 是母亲，深思熟虑，聪明耐心。吃蟹前，总会拿出几件工具，煞有介事而乐此不疲。告诉我们螃蟹至寒，需要佐以姜茶以祛寒，在配备的米醋小碟里，亦添入姜丝与紫苏，前者驱寒后者增香。泡好菊花茶，岁月静好，我们静等。",
     postId: 0,
+    music: {
+      url: "http://113.96.98.153/amobile.music.tc.qq.com/C400002jmPHL2bome7.m4a?guid=4901184180&vkey=E30BADFD39BD5ABF58A5A8E897FAD964B0CD4156405DE4C9CFCA3898DF75496E63ECDDA25343915C153DAB64AECB5C58ECB94F156DFA08B9&uin=7823&fromtag=66",
+      title: "彩虹云朵-王源",
+      coverImg: "https://y.gtimg.cn/music/photo_new/T002R300x300M000000iM4vS3RvsdP.jpg?max_age=2592000"
+    }
   },
   {
     title: "比利·林恩的中场故事",
@@ -23,9 +28,14 @@ var local_database = [
     dateTime: "24小时前",
     headImgSrc: "/index/images/post/bl.png",
     author: "迷的城",
-    date: "Nov 20 2016",
+    date: "Nov 20 2019",
     avatar: "/index/images/avatar/1.png",
     postId: 1,
+    music: {
+      url: "http://ws.stream.qqmusic.qq.com/M500001VfvsJ21xFqb.mp3?guid=ffffffff82def4af4b12b3cd9337d5e7&uin=346897220&vkey=6292F51E1E384E06DCBDC9AB7C49FD713D632D313AC4858BACB8DDD29067D3C601481D36E62053BF8DFEAF74C0A5CCFADD6471160CAF3E6A&fromtag=46",
+      title: "夜夜夜夜-齐秦",
+      coverImg: "http://y.gtimg.cn/music/photo_new/T002R300x300M000003rsKF44GyaSk.jpg?max_age=2592000"
+    }
   },
   {
     //按住alt + shift + F 可以格式化代码样式
@@ -37,10 +47,15 @@ var local_database = [
     reading: 62,
     collection: 92,
     author: "知乎",
-    date: "Nov 12 2016",
+    date: "Nov 12 2019",
     dateTime: "三天前",
     avatar: "/index/images/avatar/3.png",
     postId: 2,
+    music: {
+      url: "http://ws.stream.qqmusic.qq.com/M500001VfvsJ21xFqb.mp3?guid=ffffffff82def4af4b12b3cd9337d5e7&uin=346897220&vkey=6292F51E1E384E06DCBDC9AB7C49FD713D632D313AC4858BACB8DDD29067D3C601481D36E62053BF8DFEAF74C0A5CCFADD6471160CAF3E6A&fromtag=46",
+      title: "夜夜夜夜-齐秦",
+      coverImg: "http://y.gtimg.cn/music/photo_new/T002R300x300M000003rsKF44GyaSk.jpg?max_age=2592000"
+    }
   },
   {
     title: "微信·小程序开发工具安装指南",
@@ -52,9 +67,14 @@ var local_database = [
     dateTime: "24小时前",
     headImgSrc: "/index/images/post/xiaolong.jpg",
     author: "猫是猫的猫",
-    date: "Nov 20 2016",
+    date: "Nov 20 2019",
     avatar: "/index/images/avatar/5.png",
     postId: 3,
+    music: {
+      url: "http://ws.stream.qqmusic.qq.com/M500001VfvsJ21xFqb.mp3?guid=ffffffff82def4af4b12b3cd9337d5e7&uin=346897220&vkey=6292F51E1E384E06DCBDC9AB7C49FD713D632D313AC4858BACB8DDD29067D3C601481D36E62053BF8DFEAF74C0A5CCFADD6471160CAF3E6A&fromtag=46",
+      title: "夜夜夜夜-齐秦",
+      coverImg: "http://y.gtimg.cn/music/photo_new/T002R300x300M000003rsKF44GyaSk.jpg?max_age=2592000"
+    }
   },
   {
     title: "从视觉到触觉 这款VR手套能给你真实触感",
@@ -66,9 +86,14 @@ var local_database = [
     dateTime: "24小时前",
     headImgSrc: "/index/images/post/vr.png",
     author: "深白色",
-    date: "Nov 20 2016",
+    date: "Nov 20 2019",
     avatar: "/index/images/avatar/3.png",
     postId: 4,
+    music: {
+      url: "http://ws.stream.qqmusic.qq.com/M500001VfvsJ21xFqb.mp3?guid=ffffffff82def4af4b12b3cd9337d5e7&uin=346897220&vkey=6292F51E1E384E06DCBDC9AB7C49FD713D632D313AC4858BACB8DDD29067D3C601481D36E62053BF8DFEAF74C0A5CCFADD6471160CAF3E6A&fromtag=46",
+      title: "此时此刻-许巍",
+      coverImg: "http://y.gtimg.cn/music/photo_new/T002R300x300M000003rsKF44GyaSk.jpg?max_age=2592000"
+    }
   },
   {
     title: "爱奇艺创维开展战略合作，合力布局开放娱乐生态",
@@ -80,9 +105,14 @@ var local_database = [
     dateTime: "21小时前",
     headImgSrc: "/index/images/iqiyi.png",
     author: "深白色",
-    date: "Nov 20 2016",
+    date: "Nov 20 2019",
     avatar: "/index/images/avatar/5.png",
     postId: 5,
+    music: {
+      url: "http://ws.stream.qqmusic.qq.com/M500001VfvsJ21xFqb.mp3?guid=ffffffff82def4af4b12b3cd9337d5e7&uin=346897220&vkey=6292F51E1E384E06DCBDC9AB7C49FD713D632D313AC4858BACB8DDD29067D3C601481D36E62053BF8DFEAF74C0A5CCFADD6471160CAF3E6A&fromtag=46",
+      title: "夜夜夜夜-齐秦",
+      coverImg: "http://y.gtimg.cn/music/photo_new/T002R300x300M000003rsKF44GyaSk.jpg?max_age=2592000"
+    }
   },
 ]
 

@@ -1,10 +1,14 @@
 var postsData = require("../../data/posts-data.js")
+var app = getApp();
 
 Page({
-  data: { collected: false },
+  data: { 
+    collected: false,
+    isPlayingMusic:false,
+    },
   onLoad:function(option){  
     var postId = option.id; //这个id是post.js的navigate的自定义名称传值过来的
-    this.data.currentPostId = postId
+    this.data.currentPostId = postId;
     var postData = postsData.postList[postId]; //根据postId值(下标)获取相应文章详情
     // console.log(postData)
     // this.data.postaData=postData;       //只能修改数据但不修改视图显示
@@ -13,24 +17,73 @@ Page({
     //实现收藏功能
     var postsCollected = wx.getStorageSync("posts_collected");    //注意这个键千万别填错
     if (postsCollected){  
-      var postCollected = postsCollected[postId]
-      this.setData({collected:postCollected})
+      var postCollected = postsCollected[postId];
+      this.setData({collected:postCollected});
     }else{
       var postsCollected = {};  //存放的格式
       postsCollected[postId] = false; //{"0":false}
-      wx.setStorageSync("posts_collected", postsCollected)
+      wx.setStorageSync("posts_collected", postsCollected);
     }
+
+    if(app.globalData.g_isPlayingMusic && app.globalData.g_currentMusicPostId === postId  ){
+      this.setData({isPlayingMusic:true})
+    }
+
+    this.setMusicMonitor()
+  },
+  setMusicMonitor:function(){
+    //监听播放音乐背景图片
+    var that = this;
+    wx.onBackgroundAudioPlay(function () {
+      that.setData({
+        isPlayingMusic: true
+      })
+      //二次载入页面音乐背景图显示
+      app.globalData.g_isPlayingMusic = true;
+      app.globalData.g_currentMusicPostId = that.data.currentPostId;
+    })
+    //监听暂停背景图片
+    wx.onBackgroundAudioPause(function(){
+      that.setData({
+        isPlayingMusic: false
+      })
+      //二次载入页面音乐背景图隐藏
+      app.globalData.g_isPlayingMusic = false;
+      app.globalData.g_currentMusicPostId = null;
+    })
+  },
+  onColletionTap:function(event){
+    this.getPostsCollectedSyc();
+    // this.getPostsCollectedAsy();
+  },
+  /*异步方法*/
+  getPostsCollectedAsy:function(){
+    var that = this;
+    wx.getStorage({
+      key:"posts_collected",
+      success:function(res){
+        var postsCollected = res.data;
+        var postCollected = postsCollected[that.data.currentPostId];
+        //再次点击收藏变成未收藏,未收藏变成收藏
+        postCollected = !postCollected;
+        postsCollected[that.data.currentPostId] = postCollected;  //{"0":true}
+
+        that.showToast(postsCollected, postCollected);  //调用自定义函数          
+      }
+    })
   },
 
-  onColletionTap:function(event){
-    var postsCollected = wx.getStorageSync("posts_collected")
-    var postCollected = postsCollected[this.data.currentPostId]
+  /*同步方法*/
+  getPostsCollectedSyc:function(){
+    var postsCollected = wx.getStorageSync("posts_collected");
+    var postCollected = postsCollected[this.data.currentPostId];
     //再次点击收藏变成未收藏,未收藏变成收藏
     postCollected = !postCollected;
     postsCollected[this.data.currentPostId] = postCollected;  //{"0":true}
 
-    this.showModal(postsCollected, postCollected)  //调用自定义函数
+    this.showToast(postsCollected, postCollected); //调用自定义函数
   },
+
   /*弹出对话框*/
   showModal: function (postsCollected, postCollected){
     var that = this;
@@ -55,7 +108,7 @@ Page({
     // 更新文章是否的缓存值
     wx.setStorageSync('posts_collected', postsCollected);
     // 更新数据绑定变量，从而实现切换图片
-    this.setData({ collected: postCollected })
+    this.setData({ collected: postCollected });
 
     wx.showToast({
       title: postCollected ? "收藏成功" : "取消收藏",
@@ -82,5 +135,24 @@ Page({
         })
       }
     })
-  }
+  },
+  onMusicTap:function(event){
+    //音乐启动暂停功能
+    var currentPostId = this.data.currentPostId;
+    var isPlayingMusic = this.data.isPlayingMusic;
+    var postData = postsData.postList[currentPostId];   //postData是文件引入的全局对象变量
+    if (isPlayingMusic){
+        wx.pauseBackgroundAudio();
+        // this.data.isPlayingMusic = false;
+        this.setData({isPlayingMusic:false})
+    }else{
+        wx.playBackgroundAudio({
+          dataUrl: postData.music.url,
+          title: postData.music.title,
+          coverImgUrl: postData.music.coverImg,
+        })
+        // this.data.isPlayingMusic = true;
+        this.setData({isPlayingMusic:true})
+    }
+  },
 })

@@ -1,4 +1,6 @@
 App({
-  onLaunch: function () {
+  globalData:{
+    g_isPlayingMusic:false,
+    g_currentMusicPostId:null
   }
 })

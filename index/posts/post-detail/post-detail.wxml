@@ -1,8 +1,8 @@
 <view class="container">
-    <image class="head-image" src="{{postaData.headImgSrc}}"></image>
-    <image class="audio" src="/index/images/music/music-start.png"></image>
+    <image class="head-image" src="{{isPlayingMusic?postaData.music.coverImg:postaData.headImgSrc}}"></image>
+    <image catchtap="onMusicTap" class="audio" src="{{isPlayingMusic?'/index/images/music/music-stop.png':'/index/images/music/music-start.png'}}"></image>
     <view  class="author-date">
-        <image class="avatar" src="{{avatar}}"></image>
+        <image class="avatar" src="{{postaData.avatar}}"></image>
         <text class="author">{{postaData.author}}</text>
         <text  class="const-text">发表于</text>
         <text class="date">{{postaData.dataTime}}</text>
