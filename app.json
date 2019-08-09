@@ -1,5 +1,6 @@
 {
   "pages": [
+    "index/movies/movies",
     "index/posts/post",
     "index/welcome/welcome",
     "index/posts/post-detail/post-detail",
@@ -15,5 +16,26 @@
   "requiredBackgroundModes": [
     "audio",
     "location"
-  ]
+  ],
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#3CB371",
+    "backgroundColor": "#fff",
+    "position":"bottom",
+    "borderStyle":"black",
+    "list": [
+      {
+        "pagePath": "index/posts/post",
+        "text": "新闻资讯",
+        "iconPath": "index/images/tab/yuedu.png",
+        "selectedIconPath": "index/images/tab/yuedu_hl.png"
+      },
+      {
+        "pagePath": "index/movies/movies",
+        "text": "电影热映",
+        "iconPath": "/index/images/tab/dianying.png",
+        "selectedIconPath": "index/images/tab/dianying_hl.png"
+      }
+    ]
+  }
 }

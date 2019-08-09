@@ -1,0 +1,2 @@
+/* @import "stars/stars-template.wxss"; */
+@import "movie-list/movie-list-template.wxss";

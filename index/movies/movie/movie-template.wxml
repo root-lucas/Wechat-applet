@@ -1,0 +1,8 @@
+<import src="../stars/stars-template.wxml" />
+<template name="movieTemplate">
+    <view class="movie-container">
+        <image class="movie-img" src="/index/images/Monster.jpg"></image>
+        <text class="title">哪吒之魔童降世</text>
+        <template is="starsTemplate" />
+    </view>
+</template>
