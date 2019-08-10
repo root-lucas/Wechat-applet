@@ -1,8 +1,8 @@
 <import src="../stars/stars-template.wxml" />
 <template name="movieTemplate">
     <view class="movie-container">
-        <image class="movie-img" src="/index/images/Monster.jpg"></image>
-        <text class="title">哪吒之魔童降世</text>
-        <template is="starsTemplate" />
+        <image class="movie-img" src="{{coverageUrl}}"></image>
+        <text class="title">{{title}}</text>
+        <template is="starsTemplate" data="{{average}}" />
     </view>
 </template>
