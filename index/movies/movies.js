@@ -1,5 +1,5 @@
 var app = getApp();
-// var util = require('../../utils/util.js')
+var util = require('../utils/utils.js')
 
 Page({
   data: {
@@ -51,6 +51,7 @@ Page({
         }
         // [1,1,1,1,1] [1,1,1,0,0]
         var temp = {
+          stars: util.convertToStarsArray(subject.rating.stars),
           title: title,
           average: subject.rating.average,
           coverageUrl: subject.images.large,
@@ -61,7 +62,8 @@ Page({
       //执行到这里movies等于[{..},{..},{..}]
       var readyData = {};
       readyData[settedKey] = {
-        movies: movies
+        movies: movies,
+        categoryTitle: categoryTitle
       };  
       //执行到这里readyData[settedKey]等于{movies:Array(3)}
       //readyData则是{top250:{movies:[...],[...],[...]}},这里的top250是上面data定义的变量对象
