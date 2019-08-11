@@ -4,7 +4,8 @@
     "index/posts/post",
     "index/welcome/welcome",
     "index/posts/post-detail/post-detail",
-    "index/index"
+    "index/index",
+    "index/movies/more-movie/more-movie"
   ],
   "window": {
     "backgroundTextStyle": "light",

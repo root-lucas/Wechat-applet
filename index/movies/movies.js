@@ -10,11 +10,11 @@ Page({
   onLoad:function(event){
       //设置API地址
       var inTheatersUrl = app.globalData.doubanBase +
-        "/v2/movie/in_theaters" + "?start=0&count=3&apikey=0df993c66c0c636e29ecbb5344252a4a&start=0";
+        "/v2/movie/in_theaters" + "?start=0&count=3&apikey=0df993c66c0c636e29ecbb5344252a4a";
       var comingSoonUrl = app.globalData.doubanBase +
-        "/v2/movie/coming_soon" + "?start=0&count=3&apikey=0df993c66c0c636e29ecbb5344252a4a&start=0";
+        "/v2/movie/coming_soon" + "?start=0&count=3&apikey=0df993c66c0c636e29ecbb5344252a4a";
       var top250Url = app.globalData.doubanBase +
-        "/v2/movie/top250" + "?start=0&count=3&apikey=0df993c66c0c636e29ecbb5344252a4a&start=0";
+        "/v2/movie/top250" + "?start=0&count=3&apikey=0df993c66c0c636e29ecbb5344252a4a";
       //请求获取API接口信息
       this.getMovieListData(inTheatersUrl, "inTheaters", "正在热映");
       this.getMovieListData(comingSoonUrl, "comingSoon", "即将上映");
@@ -68,5 +68,12 @@ Page({
       //执行到这里readyData[settedKey]等于{movies:Array(3)}
       //readyData则是{top250:{movies:[...],[...],[...]}},这里的top250是上面data定义的变量对象
     this.setData(readyData); 
+  },
+  /*3.更多跳转详情页面*/
+  onMoreTap: function (event){
+    var category = event.currentTarget.dataset.category;
+      wx.navigateTo({
+        url: 'more-movie/more-movie?category=' + category,
+      })
   },
 })
