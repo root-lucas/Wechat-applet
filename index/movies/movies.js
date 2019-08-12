@@ -6,6 +6,9 @@ Page({
     inTheaters: {},   //也可以将{}写为单引号或者双引号''
     comingSoon: {},
     top250: {},
+    searchResult: {},
+    containerShow: true,
+    searchPanelShow: false,
     },
   onLoad:function(event){
       //设置API地址
@@ -69,11 +72,33 @@ Page({
       //readyData则是{top250:{movies:[...],[...],[...]}},这里的top250是上面data定义的变量对象
     this.setData(readyData); 
   },
-  /*3.更多跳转详情页面*/
+  /*3.跳转更多电影页面*/
   onMoreTap: function (event){
     var category = event.currentTarget.dataset.category;
       wx.navigateTo({
         url: 'more-movie/more-movie?category=' + category,
       })
+  },
+  /*4.获取搜索框焦点*/
+  onBindFocus: function (event) {
+    this.setData({
+      containerShow: false,
+      searchPanelShow: true
+    })
+  },
+  /*5.隐藏搜索结果*/
+  onCancelImgTap: function (event) {
+    this.setData({
+      containerShow: true,
+      searchPanelShow: false,
+      searchResult: {}
+    }
+    )
+  },
+  /*6.搜索结果*/
+  onBindBlur: function (event) {
+    var text = event.detail.value;
+    var searchUrl = "https://movie.douban.com/j/subject_suggest?q=" + text + "&cat=1002";
+    this.getMovieListData(searchUrl, "searchResult", "");
   },
 })

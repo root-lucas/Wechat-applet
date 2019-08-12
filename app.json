@@ -34,7 +34,7 @@
       {
         "pagePath": "index/movies/movies",
         "text": "电影热映",
-        "iconPath": "/index/images/tab/dianying.png",
+        "iconPath": "index/images/tab/dianying.png",
         "selectedIconPath": "index/images/tab/dianying_hl.png"
       }
     ]

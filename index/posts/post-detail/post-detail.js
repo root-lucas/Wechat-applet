@@ -51,6 +51,15 @@ Page({
       app.globalData.g_isPlayingMusic = false;
       app.globalData.g_currentMusicPostId = null;
     })
+    //监听暂停背景图片2,停止后恢复成未播放状态
+    wx.onBackgroundAudioStop(function () {
+      that.setData({
+        isPlayingMusic: false
+      })
+      //二次载入页面音乐背景图隐藏
+      app.globalData.g_isPlayingMusic = false;
+      app.globalData.g_currentMusicPostId = null;
+    })
   },
   onColletionTap:function(event){
     this.getPostsCollectedSyc();
