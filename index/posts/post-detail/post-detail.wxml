@@ -5,9 +5,9 @@
         <image class="avatar" src="{{postaData.avatar}}"></image>
         <text class="author">{{postaData.author}}</text>
         <text  class="const-text">发表于</text>
-        <text class="date">{{postaData.dataTime}}</text>
+        <text class="date">{{postaData.dateTime}}</text>
     </view>
-    <text class="title">{{title}}</text>
+    <text class="title">{{postaData.title}}</text>
     <view class="tool">
         <view class="circle-img">
             <image wx:if="{{collected}}" catchtap="onColletionTap" class="share-img" src="/index/images/icon/collection.png"></image>

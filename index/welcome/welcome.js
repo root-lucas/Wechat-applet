@@ -17,7 +17,7 @@ Page({
     // wx.redirectTo({
     //   url: '../posts/post',
     // })
-    //2.如果要跳转至带tab选项卡的页面必须使用switchTap方法
+    //3.如果要跳转至带tab选项卡的页面必须使用switchTap方法
     wx.switchTab({
       url: "../posts/post"
     });

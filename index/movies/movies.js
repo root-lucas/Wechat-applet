@@ -9,7 +9,7 @@ Page({
     searchResult: {},
     containerShow: true,
     searchPanelShow: false,
-    },
+  },
   onLoad:function(event){
       //设置API地址
       var inTheatersUrl = app.globalData.doubanBase +

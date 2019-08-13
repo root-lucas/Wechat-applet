@@ -1,40 +1,79 @@
 var local_database = [
   {
-    date: "Sep 18 2019",
-    title: "正是虾肥蟹壮时",
-    imgSrc: "/index/images/post/crab.png",
-    avatar: "/index/images/avatar/1.png",
-    content: "菊黄蟹正肥，品尝秋之味。徐志摩把,“看初花的荻芦”和“到楼外楼吃蟹”,并列为秋天来杭州不能错过的风雅之事；用林妹妹的话讲是“螯封嫩玉双双满，",
-    reading: "112",
-    collection: "96",
-    headImgSrc: "/index/images/post/crab.png",
-    author: "林白衣",
-    dateTime: "24小时前",
-    detail: "菊黄蟹正肥，品尝秋之味。徐志摩把“看初花的荻芦”和“到楼外楼吃蟹”并列为秋天来杭州不能错过的风雅之事；用林妹妹的话讲是“螯封嫩玉双双满，壳凸红脂块块香”；在《世说新语》里，晋毕卓更是感叹“右手持酒杯，左手持蟹螯，拍浮酒船中，便足了一生矣。”漫漫人生长路，美食与爱岂可辜负？于是作为一个吃货，突然也很想回味一下属于我的味蕾记忆。记忆中的秋蟹，是家人的味道，弥漫着浓浓的亲情。\n\n是谁来自山川湖海，却囿于昼夜，厨房与爱？ 是母亲，深思熟虑，聪明耐心。吃蟹前，总会拿出几件工具，煞有介事而乐此不疲。告诉我们螃蟹至寒，需要佐以姜茶以祛寒，在配备的米醋小碟里，亦添入姜丝与紫苏，前者驱寒后者增香。泡好菊花茶，岁月静好，我们静等。",
+    title: "程序员需要更强的沟通协调能力",
+    content: "最近充分感受到，程序员的沟通交流能力，太重要了，甚至是比技术能力还重要，很多程序员都习惯与有问题不说出来闷在心里。",
+    imgSrc: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565691800302&di=a5ff3e5dd8c5833a680d1f3eaa90079e&imgtype=0&src=http%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2FvqlbVFl5Jn2j8jKklhUfklsMTGJibbM7oC8v68tqIZk3iaUrCiaa1gSicnSv8aqeQ3hddIOoz55e2N4miamGptnpSGw%2F640%3Fwx_fmt%3Dpng",
+    reading: 96,
+    detail: "最近充分感受到，程序员的沟通交流能力，太重要了，甚至是比技术能力还重要，很多程序员都习惯与有问题不说出来闷在心里。\n\n1：有些有难度的东西搞不定，也不跟领导讲一下 -- 不找同事问、不找技术领导问、自己闷头研究，好几天也弄不好；其实嘴巴一张、你身边就有寂寞高手闲着没事看新闻呢，你一问，人家其实也很容易给你露一手的，求求你了，大哥，你有问题能否问一下身边的人？这些人可都是过来人，很多经验都是有的呀。\n\n2：程序模块写好了，也不跟领导讲一下 --  接着闷头学习研究新技术、看看新闻、看看电影、下载下载小电影、网上再娱乐娱乐； 能否写好了程序，跟你的主管打个招呼、也验收一下劳动成果？检查一下代码质量？检查一下数据库设计？检查一下用户交互操作处理？是否及时让测试部门测试一下？\n\n 3：修改了程序也不跟组员讲一下 -- 想怎么修改就怎么修改，不跟主管讲、不跟组员讲，大家都各搞各的，功能函数也没多大重复利用的价值，每个人都写一套，甚至代码的风格都不一样，各干各的，就是有10个人的软件公司，跟1000个人的软件公司没啥大差别一样，因为大家都在各干各的而已，只是把1000个人拉在一起开发程序与拉过来10个人一起开发程序的区别，没啥质的飞跃而已。\n\n4：修改了Bug也不跟领导讲一下 -- 测试人员也不知道你是否修改了程序了，领导也不知道你到底做好了那些程序了？说不定，别人还把你已经修改的程序再改一遍了，更有甚者，修改了Bug，连个注释都不舍得写，不知道在想啥？\n\n5：工作任务，无法按时完成了，也不跟领导说一下  -- 不知道是出于面子问题，还是怕别人说能力不行，总之一大堆工作还没能按时完成，也不及时跟领导讲一下，好让领导有充分的考虑，重新的任务编排等措施出来，耽误了宝贵的时间，不能按时完成任务并不是天大的错误，没有及时汇报无法按时完成才是天大的错误。\n\n其实，当一个好员工并不难，技术不行，可以向身边的同事多学习，多模仿，多参考人家的优点就可以了，提高也会很快，在领导的眼里，好员工其实很简单的，就是平时注意做到：“每项工作任务做好了，及时汇报一下情况，没事情做了，及时汇报一下情况，事情无法按时做好了，及时汇报一下，平时多注意沟通交流” 你就会成为很优秀的员工了。",
+    collection: 26,
+    dateTime: "21小时前",
+    headImgSrc: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565691800302&di=a5ff3e5dd8c5833a680d1f3eaa90079e&imgtype=0&src=http%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2FvqlbVFl5Jn2j8jKklhUfklsMTGJibbM7oC8v68tqIZk3iaUrCiaa1gSicnSv8aqeQ3hddIOoz55e2N4miamGptnpSGw%2F640%3Fwx_fmt%3Dpng",
+    author: "Root",
+    date: "Jun 20 2019",
+    avatar: "/index/images/avatar/5.png",
     postId: 0,
     music: {
-      url: "http://113.96.98.153/amobile.music.tc.qq.com/C400002jmPHL2bome7.m4a?guid=4901184180&vkey=E30BADFD39BD5ABF58A5A8E897FAD964B0CD4156405DE4C9CFCA3898DF75496E63ECDDA25343915C153DAB64AECB5C58ECB94F156DFA08B9&uin=7823&fromtag=66",
-      title: "彩虹云朵-王源",
-      coverImg: "https://y.gtimg.cn/music/photo_new/T002R300x300M000000iM4vS3RvsdP.jpg?max_age=2592000"
+      url: "http://ws.stream.qqmusic.qq.com/M500001VfvsJ21xFqb.mp3?guid=ffffffff82def4af4b12b3cd9337d5e7&uin=346897220&vkey=6292F51E1E384E06DCBDC9AB7C49FD713D632D313AC4858BACB8DDD29067D3C601481D36E62053BF8DFEAF74C0A5CCFADD6471160CAF3E6A&fromtag=46",
+      title: "此时此刻-许巍",
+      coverImg: "http://y.gtimg.cn/music/photo_new/T002R300x300M000003rsKF44GyaSk.jpg?max_age=2592000"
     }
   },
   {
-    title: "比利·林恩的中场故事",
-    content: "一 “李安是一位绝不会重复自己的导演，本片将极富原创性李安众所瞩目的新片《比利林恩漫长的中场休息》，正式更名《半场无战事》。",
-    imgSrc: "/index/images/post/bl.png",
+    title: "《原则》读后感",
+    content: "《原则》是一本还不错的书。我大概花了3~4个晚上看完了部分,梳理自己觉得非常有用的五大生活原则",
+    imgSrc: "https://upload-images.jianshu.io/upload_images/1584775-3e9d880748af6fcf.jpg?imageMogr2/auto-orient/",
     reading: 62,
-    detail: "一 “李安是一位绝不会重复自己的导演，本片将极富原创性”李安众所瞩目的新片《比利林恩漫长的中场休息》，正式更名《半场无战事》。预告片首次曝光后，被视作是明年奥斯卡种子选手。该片根据同名畅销书改编。原著小说荣获美国国家图书奖。也被BBC评为21世纪最伟大的12本英文小说之一。影片讲述一位19岁德州男孩的比利·林恩入伍参加伊战，在一次交火中他大难不死，意外与战友成为大众的关注焦点，并被塑造成英雄。之后他们返回国内，在橄榄球赛中场休息时授勋。这名战争英雄却面临前所未有的心灵煎熬……李安为什么选中这部电影来拍？因为李安想要挑战前所未有的技术难题：以120帧每秒的速度、4K、3D技术全面结合，来掀起一场电影视觉革命。什么意思？所谓“电影是24格每秒的谎言”，其中的24格，就是帧数。",
+    detail: "1.做一个超级现实的人\n\n自认为是一个相对理想主义的人，比较相信天道酬勤、努力就一定有收获。其实想想好多事情都是有灰色地带，也逐渐明白跟很多人交往是需要明白交往的基础——双方的利益点，特别是在工作上交往，没有无缘无故的好处，如果没有背景，就多做点事情。当然底线是不辜负自己短暂的人生，无愧于心。\n\n2.做到头脑极度开放、极度透明, 将带来更有意义的工作和更有意义的人际关系\n\n这个原则非常好，大家都或多或少因为自尊心等原因，端着的情况是非常多，无法让自己开放、透明。在工作场合上更难，特别是已经当了领导的朋友，因维持自己的权威性而让团队失误的现象时有发生。所以很多时候需要加权信任，就是放弃自己绝对正确的意识，客观看待其他人的意见，将各类意见进行整合、加权。\n\n3.现实为了整体而趋向最优化，而不是为了个体\n\n这个我非常认同，社会现实不是为了我们单个人，而是驱动整体完善，记得我之前写过日剧《半泽直树》短评 ：前面9集，给人的感觉半泽直树是个神话，宽容和理解朋友的背叛，努力后事业上顺其自然的提升，揭露不合理事实，品德真如上帝一样。第10集，体现这部剧编剧的厉害之处就是，在最后一刻给你拉回到现实，让你明白对于'个人恩怨最后要屈服于各方面力量平衡'的道理！\n\n4. 大多数人犯下的最大错误是不客观看待自己以及他人\n\n这个真的是天性，大家都或多或少觉得自己挺完美，应该不会有人背后说自己坏话。但是怎么可能呢，这个等于要让自己成为人民币的节奏啊。所以自知之明非常可贵，承认缺点才是不断改进的第一步。同样承认别人不是一无是处，也是客观看待他人的第一步。\n\n5.不要担心自己的形象，只关心如何实现目标\n\n这个让我挺有感触，之前接触一个项目，指导的人是从华为出来。不知道在什么情况下，她说了一句话，具体原话是什么我不记得了，意思是：不管过程如何，关键是最后要完成让领导如期看到材料的结果，华为就是这样啊，结果导向。"
+    ,
     collection: 92,
     dateTime: "24小时前",
-    headImgSrc: "/index/images/post/bl.png",
-    author: "迷的城",
-    date: "Nov 20 2019",
+    headImgSrc: "https://upload-images.jianshu.io/upload_images/1584775-3e9d880748af6fcf.jpg?imageMogr2/auto-orient/",
+    author: "Root",
+    date: "Jun 20 2019",
     avatar: "/index/images/avatar/1.png",
     postId: 1,
     music: {
-      url: "http://ws.stream.qqmusic.qq.com/M500001VfvsJ21xFqb.mp3?guid=ffffffff82def4af4b12b3cd9337d5e7&uin=346897220&vkey=6292F51E1E384E06DCBDC9AB7C49FD713D632D313AC4858BACB8DDD29067D3C601481D36E62053BF8DFEAF74C0A5CCFADD6471160CAF3E6A&fromtag=46",
-      title: "夜夜夜夜-齐秦",
-      coverImg: "http://y.gtimg.cn/music/photo_new/T002R300x300M000003rsKF44GyaSk.jpg?max_age=2592000"
+      url: "https://m701.music.126.net/20190813173034/0b40748448f30d5013506bb3a14dddc6/jdyyaac/510f/010c/0f5d/fe320788bd6f65afa83f87a2ee2e52b9.m4a",
+      title: "Go Off-许景天",
+      coverImg: "https://p1.music.126.net/6CB6Jsmb7k7qiJqfMY5Row==/109951164260234943.jpg?param=440y440"
+    }
+  },
+  {
+    date: "Jun 18 2019",
+    title: "关于程序员这个职业",
+    imgSrc: "https://upload-images.jianshu.io/upload_images/4412479-6b6a05ec62468a1b.jpg",
+    avatar: "/index/images/avatar/1.png",
+    content: "随着互联网的迅猛发展，和互联网相关的职业开始受到人们的关注。作为互联网产业基础设施的建设者---程序员",
+    reading: "112",
+    collection: "96",
+    headImgSrc: "https://upload-images.jianshu.io/upload_images/4412479-6b6a05ec62468a1b.jpg",
+    author: "Root",
+    dateTime: "24小时前",
+    detail: "第一点，程序员不是万能的。怎么说呢？外行人一谈到程序员，可能就会下意识地认为他一定是个电脑高手，电脑维修，那是必备技能。还有就是只要自己想要的功能，都可以找程序员来实现，或者说程序员可以写任何程序，比如抢票，游戏开挂等等。作者作为一名非资深程序员，只想说那些人真的是异想天开。现实中的程序员一般都是根据业务模块，负责某一项功能，比如后台业务模块，数据库，前端页面等等。这几个名词如果听不懂也没有关系，知道程序员做的事情也是有明确分工，不是万能的就可以了。\n\n第二点，程序员需要宽松的工作环境。互联网行业最吸引人的地方在于自由，平等。没有过多的约束，无论是工作中还是在网络世界，人们可以畅所欲言，做自己喜欢的事情，对于所接触的事物，有绝对的选择权利。互联网公司，同事之间没有太多的等级观念，彼此之间的交流很随和，这个和传统行业就不一样了，传统行业，官大一级压死人，在传统行业发展，有很多的职场潜规则，套路太多，气氛也比较压抑，但是在互联网行业，情况就好多了，公司必须唯才是举，必须创造良好宽松的工作环境，否则是留不住人才的。传统行业跳槽频率低，跳槽之后再找到自己满意的工作很难，但是在互联网行业就变了，程序员跳槽是很正常的，如果一家公司工作环境不好，即使给的工资高一些，程序员也是不会留下来的。开发者从事的工作也是属于创作的，程序就是他们的作品。对于一个创作者而言，看重的并不是只有物质，更重要的是精神层面的生活。\n\n第三点，程序员并不是不善交流。由于工作的原因，程序员每天需要面对的是电脑，是机器，和人沟通的时间太少。因此外行人就会认为程序员一般都是沉默寡言的。实际上，一名优秀的程序员，一定是善于表达的，因为他需要把他的程序写的让别人看得懂。有这么一句话，大概意思是\"高级工程师写的代码都是给别人看的\"。因此不善交流这顶帽子盖在程序员的头上还真是有点不合适，不过现实中也确实有很多程序员不大会讲话，因为他们长时间和机器打交道，所以和人之间的沟通能力就渐渐退化。一般人认为程序员说话很直，不会拐弯抹角，或者不懂情调那也无可厚非。\n第四点，程序员对生活很有讲究。关于这一点，不太具有普遍性，但是大多数程序员还是符合这一点的。具体提现是自己的电脑设置一定是有自己风格的，会有各种高(feng)级(sao)",
+    postId: 2,
+    music: {
+      url: "https://m801.music.126.net/20190813171401/a45f60e2a751511330d366851322dbee/jdyyaac/0259/535e/0458/5390ff142ed4038de19432a550170f0a.m4a",
+      title: "DIVINE-少女时代",
+      coverImg: "http://p2.music.126.net/VV2rbKH9I1DiFUB2luDsQA==/6621259023118417.jpg?param=130y130"
+    }
+  },
+  {
+    title: "从视觉到触觉 这款VR手套能给你真实触感",
+    content: "7月29日消息，据国外媒体VentureBeat报道，一家名为Dexta Robotics的公司最近发布了一款有望变革虚拟现实手部追踪与交互方式的新产品",
+    imgSrc: "/index/images/post/vr.png",
+    reading: 102,
+    detail: "消息，据国外媒体VentureBeat报道，一家名为Dexta Robotics的公司最近发布了一款有望变革虚拟现实手部追踪与交互方式的新产品。该产品名为“Dexmo”，它是一款像手套那样戴在手上使用的未来主义外骨骼。它内置大量的元件，能够与VR体验进行交互，可帮助你感觉握在你的双手的虚拟物体。Dexmo据Dexta称，“Dexmo是一款针对你的双手的机械外骨骼。它能够捕捉你的手部运动，以及提供即时的力反馈。有了Dexmo，你可以感受到虚拟物体的大小、形状和坚硬度。你可以接触数字世界。”市面上已经有数款产品旨在处理虚拟现实中的手部交互，也有相关的产品即将要进入市场。例如，颇受欢迎的HTC Vive头盔配有一副控制器，其控制器能够使得追踪系统看到你的双手，让你可以用它们来在特定体验中与物体进行交互。今年晚些时候，Oculus将开始出货类似的手部控制产品Oculus Touch。10月，索尼也将开始出货配备两个PlayStation Move手部控制器的PS VR。Leap Motion甚至更进一步：利用传感器来追踪手指和手部的运动。",
+    collection: 26,
+    dateTime: "24小时前",
+    headImgSrc: "/index/images/post/vr.png",
+    author: "Root",
+    date: "Jun 20 2019",
+    avatar: "/index/images/avatar/3.png",
+    postId: 3,
+    music: {
+      url: "https://m801.music.126.net/20190813164725/e6f177ed9b2d657c4d145e66cf7e8eca/jdyyaac/520c/0352/020f/ef8c76df2c489a2a50b35ef48e68ba6d.m4a",
+      title: "DIZZY-Ours",
+      coverImg: "https://p3.music.126.net/xLDdcvX4nVVHePy8qcvYVQ==/109951163994703160.jpg?param=200y200"
     }
   },
   {
@@ -46,11 +85,11 @@ var local_database = [
     headImgSrc: "/index/images/post/sls.png",
     reading: 62,
     collection: 92,
-    author: "知乎",
-    date: "Nov 12 2019",
+    author: "Root",
+    date: "Jun 12 2019",
     dateTime: "三天前",
     avatar: "/index/images/avatar/3.png",
-    postId: 2,
+    postId: 4,
     music: {
       url: "http://ws.stream.qqmusic.qq.com/M500001VfvsJ21xFqb.mp3?guid=ffffffff82def4af4b12b3cd9337d5e7&uin=346897220&vkey=6292F51E1E384E06DCBDC9AB7C49FD713D632D313AC4858BACB8DDD29067D3C601481D36E62053BF8DFEAF74C0A5CCFADD6471160CAF3E6A&fromtag=46",
       title: "夜夜夜夜-齐秦",
@@ -66,46 +105,8 @@ var local_database = [
     collection: 92,
     dateTime: "24小时前",
     headImgSrc: "/index/images/post/xiaolong.jpg",
-    author: "猫是猫的猫",
-    date: "Nov 20 2019",
-    avatar: "/index/images/avatar/5.png",
-    postId: 3,
-    music: {
-      url: "http://ws.stream.qqmusic.qq.com/M500001VfvsJ21xFqb.mp3?guid=ffffffff82def4af4b12b3cd9337d5e7&uin=346897220&vkey=6292F51E1E384E06DCBDC9AB7C49FD713D632D313AC4858BACB8DDD29067D3C601481D36E62053BF8DFEAF74C0A5CCFADD6471160CAF3E6A&fromtag=46",
-      title: "夜夜夜夜-齐秦",
-      coverImg: "http://y.gtimg.cn/music/photo_new/T002R300x300M000003rsKF44GyaSk.jpg?max_age=2592000"
-    }
-  },
-  {
-    title: "从视觉到触觉 这款VR手套能给你真实触感",
-    content: "8月29日消息，据国外媒体VentureBeat报道，一家名为Dexta Robotics的公司最近发布了一款有望变革虚拟现实手部追踪与交互方式的新产品",
-    imgSrc: "/index/images/post/vr.png",
-    reading: 102,
-    detail: "消息，据国外媒体VentureBeat报道，一家名为Dexta Robotics的公司最近发布了一款有望变革虚拟现实手部追踪与交互方式的新产品。该产品名为“Dexmo”，它是一款像手套那样戴在手上使用的未来主义外骨骼。它内置大量的元件，能够与VR体验进行交互，可帮助你感觉握在你的双手的虚拟物体。Dexmo据Dexta称，“Dexmo是一款针对你的双手的机械外骨骼。它能够捕捉你的手部运动，以及提供即时的力反馈。有了Dexmo，你可以感受到虚拟物体的大小、形状和坚硬度。你可以接触数字世界。”市面上已经有数款产品旨在处理虚拟现实中的手部交互，也有相关的产品即将要进入市场。例如，颇受欢迎的HTC Vive头盔配有一副控制器，其控制器能够使得追踪系统看到你的双手，让你可以用它们来在特定体验中与物体进行交互。今年晚些时候，Oculus将开始出货类似的手部控制产品Oculus Touch。10月，索尼也将开始出货配备两个PlayStation Move手部控制器的PS VR。Leap Motion甚至更进一步：利用传感器来追踪手指和手部的运动。",
-    collection: 26,
-    dateTime: "24小时前",
-    headImgSrc: "/index/images/post/vr.png",
-    author: "深白色",
-    date: "Nov 20 2019",
-    avatar: "/index/images/avatar/3.png",
-    postId: 4,
-    music: {
-      url: "http://ws.stream.qqmusic.qq.com/M500001VfvsJ21xFqb.mp3?guid=ffffffff82def4af4b12b3cd9337d5e7&uin=346897220&vkey=6292F51E1E384E06DCBDC9AB7C49FD713D632D313AC4858BACB8DDD29067D3C601481D36E62053BF8DFEAF74C0A5CCFADD6471160CAF3E6A&fromtag=46",
-      title: "此时此刻-许巍",
-      coverImg: "http://y.gtimg.cn/music/photo_new/T002R300x300M000003rsKF44GyaSk.jpg?max_age=2592000"
-    }
-  },
-  {
-    title: "爱奇艺创维开展战略合作，合力布局开放娱乐生态",
-    content: "爱奇艺和创维分别作为国内领先的在线视频品牌",
-    imgSrc: "/index/images/iqiyi.png",
-    reading: 96,
-    detail: "爱奇艺和创维分别作为国内领先的在线视频品牌和家电品牌。双方一直锐意创新，为用户提供优质的服务体验和产品体验。据悉，爱奇艺与创维将展开从资本到VIP会员服务等各方面的深入合作。籍由此次合作，爱奇艺将战略投资创维旗下拥有高端互联网电视品牌的酷开公司。从下一财年开始，创维旗下互联网电视将通过银河互联网电视集成播控平台，预置VIP会员服务及相关内容。这种捆绑终端与VIP内容的全新销售模式，将大幅提升互联网电视终端用户的体验，给予用户更多优质内容的选择。",
-    collection: 26,
-    dateTime: "21小时前",
-    headImgSrc: "/index/images/iqiyi.png",
-    author: "深白色",
-    date: "Nov 20 2019",
+    author: "Root",
+    date: "Jun 20 2019",
     avatar: "/index/images/avatar/5.png",
     postId: 5,
     music: {
