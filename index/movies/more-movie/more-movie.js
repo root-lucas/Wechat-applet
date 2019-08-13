@@ -32,16 +32,25 @@ Page({
     this.data.requestUrl = dataUrl;
     util.http(dataUrl, this.processDoubanData)
   },
-  /*3.上拉加载数据*/
-  onScrollLower:function(event){
-      // console.log("加载更新")
-      var nextUrl = this.data.requestUrl + "&start=" + this.data.totalCount + "&count=20";
-      util.http(nextUrl, this.processDoubanData);
-      wx.showNavigationBarLoading(); 
+  // /*3.上拉事件函数*/
+  // onScrollLower:function(event){
+  //     // console.log("触发上拉刷新事件")
+  //     var nextUrl = this.data.requestUrl + "&start=" + this.data.totalCount + "&count=20";
+  //     util.http(nextUrl, this.processDoubanData);
+  //     wx.showNavigationBarLoading(); 
+  // },
+  /*3.上拉事件函数*/
+  onReachBottom: function (event) {
+    console.log("触发上拉刷新事件")
+    var nextUrl = this.data.requestUrl +
+      "&start=" + this.data.totalCount + "&count=20";
+    util.http(nextUrl, this.processDoubanData)
+    wx.showNavigationBarLoading()
   },
-  /*4.开启当前页面下拉刷新会触发的系统函数*/
+
+  /*4.下拉事件函数*/
   onPullDownRefresh: function (event) {
-    console.log("下拉按钮")
+    console.log("触发下拉刷新事件")
     var refreshUrl = this.data.requestUrl +
       "&start=0&count=20";
     this.data.movies = {};
