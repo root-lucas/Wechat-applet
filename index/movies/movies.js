@@ -101,4 +101,11 @@ Page({
     var searchUrl = "https://movie.douban.com/j/subject_suggest?q=" + text + "&cat=1002";
     this.getMovieListData(searchUrl, "searchResult", "");
   },
+  /*7.跳转电影详情*/
+  onMovieTap: function (event) {
+    var movieId = event.currentTarget.dataset.movieid;
+    wx.navigateTo({
+      url: "movie-detail/movie-detail?id=" + movieId
+    })
+  },
 })

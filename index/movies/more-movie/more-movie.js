@@ -43,7 +43,7 @@ Page({
   onPullDownRefresh: function (event) {
     console.log("下拉按钮")
     var refreshUrl = this.data.requestUrl +
-      "?star=0&count=20";
+      "&start=0&count=20";
     this.data.movies = {};
     this.data.isEmpty = true;
     this.data.totalCount = 0;
@@ -89,6 +89,13 @@ Page({
       title: this.data.navigateTitle,  //这个是动态设置导航栏上面的页面标题,等于"navigationBarTitleText":"电影列表"
       success: function (res) {
       }
+    })
+  },
+  /*5.跳转电影详情*/
+  onMovieTap: function (event) {
+    var movieId = event.currentTarget.dataset.movieid;
+    wx.navigateTo({
+      url: "../movie-detail/movie-detail?id=" + movieId
     })
   },
 })
