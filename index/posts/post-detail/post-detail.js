@@ -14,7 +14,7 @@ Page({
     // this.data.postaData=postData;       //只能修改数据但不修改视图显示
     this.setData({postaData:postData});    //数据绑定,前面已经说过,相当于上面的data对象变量
     
-    //实现收藏功能
+    //页面加载收藏功能实现
     var postsCollected = wx.getStorageSync("posts_collected");    //注意这个键千万别填错
     if (postsCollected){  
       var postCollected = postsCollected[postId];
@@ -31,6 +31,7 @@ Page({
 
     this.setMusicMonitor()
   },
+  /*5.监听播放音乐背景图片*/
   setMusicMonitor:function(){
     //监听播放音乐背景图片
     var that = this;
@@ -61,28 +62,29 @@ Page({
       app.globalData.g_currentMusicPostId = null;
     })
   },
+  /*1.触发图片事件*/
   onColletionTap:function(event){
     this.getPostsCollectedSyc();
     // this.getPostsCollectedAsy();
   },
-  /*异步方法*/
-  getPostsCollectedAsy:function(){
-    var that = this;
-    wx.getStorage({
-      key:"posts_collected",
-      success:function(res){
-        var postsCollected = res.data;
-        var postCollected = postsCollected[that.data.currentPostId];
-        //再次点击收藏变成未收藏,未收藏变成收藏
-        postCollected = !postCollected;
-        postsCollected[that.data.currentPostId] = postCollected;  //{"0":true}
+  /*2.异步方法*/
+  // getPostsCollectedAsy:function(){
+  //   var that = this;
+  //   wx.getStorage({
+  //     key:"posts_collected",
+  //     success:function(res){
+  //       var postsCollected = res.data;
+  //       var postCollected = postsCollected[that.data.currentPostId];
+  //       //再次点击收藏变成未收藏,未收藏变成收藏
+  //       postCollected = !postCollected;
+  //       postsCollected[that.data.currentPostId] = postCollected;  //{"0":true}
 
-        that.showToast(postsCollected, postCollected);  //调用自定义函数          
-      }
-    })
-  },
+  //       that.showToast(postsCollected, postCollected);  //调用自定义函数          
+  //     }
+  //   })
+  // },
 
-  /*同步方法*/
+  /*2.同步方法*/
   getPostsCollectedSyc:function(){
     var postsCollected = wx.getStorageSync("posts_collected");
     var postCollected = postsCollected[this.data.currentPostId];
@@ -93,7 +95,7 @@ Page({
     this.showToast(postsCollected, postCollected); //调用自定义函数
   },
 
-  /*弹出对话框*/
+  /*3.弹出对话框*/
   showModal: function (postsCollected, postCollected){
     var that = this;
     wx.showModal({
@@ -112,7 +114,7 @@ Page({
       }
     })
   },
-  /*隐式非交互*/
+  /*3.隐式非交互*/
   showToast: function (postsCollected, postCollected){
     // 更新文章是否的缓存值
     wx.setStorageSync('posts_collected', postsCollected);
@@ -124,7 +126,7 @@ Page({
       duration: 1000,
     })
   },
-  /*实现分享功能*/
+  /*4.实现分享功能*/
   onShareTap:function(event){
     var itemLists = [
       "分享给微信好友",
@@ -145,6 +147,7 @@ Page({
       }
     })
   },
+  /*5.点击播放音乐*/
   onMusicTap:function(event){
     //音乐启动暂停功能
     var currentPostId = this.data.currentPostId;

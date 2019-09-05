@@ -24,7 +24,7 @@ Page({
         dataUrl = app.globalData.doubanBase +
           "/v2/movie/coming_soon" + "?apikey=0df993c66c0c636e29ecbb5344252a4a";
         break;
-      case '豆瓣Top250':
+      case 'Top250':
         dataUrl = app.globalData.doubanBase +
           "/v2/movie/top250" + "?&apikey=0df993c66c0c636e29ecbb5344252a4a";
         break;

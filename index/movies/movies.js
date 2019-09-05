@@ -21,7 +21,7 @@ Page({
       //请求获取API接口信息
       this.getMovieListData(inTheatersUrl, "inTheaters", "正在热映");
       this.getMovieListData(comingSoonUrl, "comingSoon", "即将上映");
-      this.getMovieListData(top250Url, "top250", "豆瓣Top250");
+      this.getMovieListData(top250Url, "top250", "Top250");
   },
 
   /*1.网络请求函数*/
